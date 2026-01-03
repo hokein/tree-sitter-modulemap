@@ -1,0 +1,43 @@
+{
+  "$schema": "https://tree-sitter.github.io/tree-sitter/assets/schemas/config.schema.json",
+  "grammars": [
+    {
+      "name": "modulemap",
+      "camelcase": "Modulemap",
+      "title": "Modulemap",
+      "scope": "source.modulemap",
+      "file-types": [
+        "map",
+        "modulemap"
+      ],
+      "injection-regex": "^modulemap$",
+      "class-name": "TreeSitterModulemap"
+    }
+  ],
+  "metadata": {
+    "version": "0.1.0",
+    "license": "MIT",
+    "description": "Tree-sitter grammar for clang modulemap",
+    "authors": [
+      {
+        "name": "hokein",
+        "email": "hokein.wu@gmail.com",
+        "url": ""
+      }
+    ],
+    "links": {
+      "repository": "https://github.com/tree-sitter/tree-sitter-modulemap",
+      "funding": ""
+    }
+  },
+  "bindings": {
+    "c": false,
+    "go": false,
+    "java": false,
+    "node": true,
+    "python": false,
+    "rust": true,
+    "swift": false,
+    "zig": false
+  }
+}
